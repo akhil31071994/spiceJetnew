@@ -52,10 +52,4 @@ s.selectByIndex(1);
 
 
 
-@Test
-public void xxxx(){
-	
-System.out.println("new change");	
-}
-
 }
