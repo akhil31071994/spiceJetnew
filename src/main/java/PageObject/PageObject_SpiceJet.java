@@ -4,14 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Home_PageObject {
+public class PageObject_SpiceJet {
 
 	public WebDriver driver;
 	By source=By.id("ctl00_mainContent_ddl_originStation1_CTXT");
+	//By addon=By.xpath("//a[@id='highlight-addons']");
 	
-	public Home_PageObject(WebDriver driver2) {
+	By addon=By.id("highlight-addons");
+	public PageObject_SpiceJet(WebDriver driver) {
 		
-		this.driver=driver2;
+		this.driver=driver;
 	}
 
 	public WebElement sourceStation(){
@@ -19,6 +21,8 @@ public class Home_PageObject {
 		
 		
 	}
-	
+	public WebElement hoveronEle(){
+		return driver.findElement(addon);
+	}
 	
 }

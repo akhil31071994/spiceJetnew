@@ -1,2 +1,2 @@
-PageObject\Home_PageObject.class
 resources\BaseSpice.class
+PageObject\PageObject_SpiceJet.class
