@@ -50,4 +50,9 @@ public void dropdown() throws IOException{
 s.selectByIndex(1);	
 }
 
+@Test
+public void xx(){
+	
+	System.out.println("aoiefjjifjaeifjiajefijifj");
+}
 }
