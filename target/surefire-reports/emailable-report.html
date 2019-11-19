@@ -31,14 +31,61 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">16.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">218.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Test2</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">48.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">268.8 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">spiceJet.Home2</td><td><a href="#m1"><b>score</b>  </a></td><td class="numi">1</td><td>1574149830158</td><td class="numi">51762</td></tr>
 <tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">spiceJet.HomeNew</td><td><a href="#m1"><b>score</b>  </a></td><td class="numi">1</td><td>1574064399547</td><td class="numi">16514</td></tr>
+<tr class="passedodd"><td rowspan="1">spiceJet.Home2</td><td><a href="#m2"><b>brokenLinks</b>  </a></td><td class="numi">1</td><td>1574149760690</td><td class="numi">69467</td></tr>
+<tr class="passedeven"><td rowspan="3">spiceJet.HomeNew</td><td><a href="#m3"><b>dropdown</b>  </a></td><td class="numi">1</td><td>1574149675219</td><td class="numi">19895</td></tr><tr class="passedeven"><td><a href="#m4"><b>hoveronElemet</b>  </a></td><td class="numi">1</td><td>1574149695115</td><td class="numi">33192</td></tr><tr class="passedeven"><td><a href="#m5"><b>invokeDriver</b>  </a></td><td class="numi">1</td><td>1574149728307</td><td class="numi">32380</td></tr>
+<tr><th colspan="4">Test2 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">spiceJet.Home2</td><td><a href="#m6"><b>brokenLinks</b>  </a></td><td class="numi">1</td><td>1574149884086</td><td class="numi">48554</td></tr>
 </table>
 <h1>Test</h1>
-<h2 id="m1">spiceJet.HomeNew:score</h2>
+<h2 id="m1">spiceJet.Home2:score</h2>
+<div style="padding-left:3em">
+<p>stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-9HTBPRE&apos;, ip: &apos;192.168.100.41&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\Akhil\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60313}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.97, webStorageEnabled: true}
+Session ID: 1704b6873ae6c3b818e11cf36dbf8af0</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
+<br/>at spiceJet.Home2.score(Home2.java:56)
+<br/>28 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">spiceJet.HomeNew:invokeDriver</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">spiceJet.Home2:brokenLinks</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">spiceJet.HomeNew:dropdown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">spiceJet.HomeNew:hoveronElemet</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Test2</h1>
+<h2 id="m6">spiceJet.Home2:brokenLinks</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

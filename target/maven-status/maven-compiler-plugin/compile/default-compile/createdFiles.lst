@@ -1,2 +1,2 @@
-Base_Pro\BaseSpice.class
-PageObject\PageObject_SpiceJet.class
+Objects\PageObject_SpiceJet.class
+Baseclass\BaseSpice.class

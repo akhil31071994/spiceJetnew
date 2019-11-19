@@ -5,9 +5,15 @@
     <classes>
       <class name="spiceJet.HomeNew">
         <methods>
-          <include name="score"/>
+          <include name="closeBrowser"/>
+          <include name="testt"/>
         </methods>
       </class> <!-- spiceJet.HomeNew -->
+      <class name="spiceJet.Home2">
+        <methods>
+          <include name="score"/>
+        </methods>
+      </class> <!-- spiceJet.Home2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

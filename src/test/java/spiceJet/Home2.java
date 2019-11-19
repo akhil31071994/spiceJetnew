@@ -10,8 +10,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Base_Pro.BaseSpice;
-import PageObject.PageObject_SpiceJet;
+import Baseclass.BaseSpice;
+import Objects.PageObject_SpiceJet;
+
+
+
 
 public class Home2 extends BaseSpice{
 	@Test
@@ -54,5 +57,5 @@ public class Home2 extends BaseSpice{
 			}
 	System.out.println(append);
 		}
-		
-}}
+	}
+}
