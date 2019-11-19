@@ -1,4 +1,4 @@
-package resources;
+package Base_Pro;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -27,7 +27,7 @@ public Properties prop;
 	System.setProperty("webdriver.chrome.driver", "C:\\eclipse\\chromedriver.exe");
 		System.out.println("browser is " +browser);
 		 driver=new ChromeDriver();
-
+driver.manage().window().maximize();
 	}
 		else {
 			System.out.println("Browser is not Chrome");

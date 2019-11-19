@@ -3,11 +3,11 @@
 <suite verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="spiceJet.HomePage">
+      <class name="spiceJet.HomeNew">
         <methods>
-          <include name="invokeDriver"/>
+          <include name="score"/>
         </methods>
-      </class> <!-- spiceJet.HomePage -->
+      </class> <!-- spiceJet.HomeNew -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
