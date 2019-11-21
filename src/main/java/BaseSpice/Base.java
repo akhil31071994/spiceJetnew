@@ -1,4 +1,4 @@
-package Baseclass;
+package BaseSpice;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BaseSpice 
+public class Base
 {
 public WebDriver driver;
 public Properties prop;

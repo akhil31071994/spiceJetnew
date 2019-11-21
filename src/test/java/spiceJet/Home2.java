@@ -10,13 +10,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import Baseclass.BaseSpice;
+import BaseSpice.Base;
 import Objects.PageObject_SpiceJet;
 
 
 
 
-public class Home2 extends BaseSpice{
+public class Home2 extends Base{
 	@Test
 	public void	brokenLinks() throws IOException{
 		driver=initDriver();
