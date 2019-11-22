@@ -14,7 +14,9 @@ public class PageObject_SpiceJet{
 	By dd=By.id("ctl00_mainContent_DropDownListCurrency");
 	By addon=By.id("highlight-addons");
 	By links=By.tagName("a");
+	By datepicker=By.xpath("//div[@class='DayPicker-Month']");
 	
+	By from=By.id("fromPlaceName");
 	By xdriver=By.xpath("//*[@id='innings_1']/div[1]/div");
 	public PageObject_SpiceJet(WebDriver driver) {
 		
@@ -41,5 +43,13 @@ public class PageObject_SpiceJet{
 	public List<WebElement> scorecard(){
 		return driver.findElements(xdriver);
 		
+	}
+	
+	public WebElement date(){
+		return driver.findElement(datepicker);
+	}
+	
+	public WebElement fromm(){
+		return driver.findElement(from);
 	}
 }

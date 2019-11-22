@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21692" started-at="2019-11-20T04:42:31Z" finished-at="2019-11-20T04:42:53Z">
+  <suite name="Suite" duration-ms="52" started-at="2019-11-21T08:07:34Z" finished-at="2019-11-21T08:07:34Z">
     <groups>
+      <group name="random">
+        <method signature="Home2.write()[pri:0, instance:spiceJet.Home2@6aaa5eb0]" name="write" class="spiceJet.Home2"/>
+        <method signature="Home2.xyz()[pri:0, instance:spiceJet.Home2@6aaa5eb0]" name="xyz" class="spiceJet.Home2"/>
+        <method signature="RND.write()[pri:0, instance:spiceJet.RND@506e6d5e]" name="write" class="spiceJet.RND"/>
+        <method signature="RND.xyz()[pri:0, instance:spiceJet.RND@506e6d5e]" name="xyz" class="spiceJet.RND"/>
+      </group> <!-- random -->
     </groups>
-    <test name="Test2" duration-ms="21692" started-at="2019-11-20T04:42:31Z" finished-at="2019-11-20T04:42:53Z">
-      <class name="spiceJet.HomeNew">
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:spiceJet.HomeNew@506e6d5e]" name="closeBrowser" is-config="true" duration-ms="18" started-at="2019-11-20T10:12:31Z" finished-at="2019-11-20T10:12:32Z">
+    <test name="Test" duration-ms="52" started-at="2019-11-21T08:07:34Z" finished-at="2019-11-21T08:07:34Z">
+      <class name="spiceJet.RND">
+        <test-method status="PASS" signature="write()[pri:0, instance:spiceJet.RND@506e6d5e]" name="write" duration-ms="16" started-at="2019-11-21T13:37:34Z" finished-at="2019-11-21T13:37:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="testt()[pri:0, instance:spiceJet.HomeNew@506e6d5e]" name="testt" is-config="true" duration-ms="0" started-at="2019-11-20T10:12:32Z" finished-at="2019-11-20T10:12:32Z">
+        </test-method> <!-- write -->
+        <test-method status="PASS" signature="xyz()[pri:0, instance:spiceJet.RND@506e6d5e]" name="xyz" duration-ms="0" started-at="2019-11-21T13:37:34Z" finished-at="2019-11-21T13:37:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testt -->
-        <test-method status="PASS" signature="doubleclick()[pri:0, instance:spiceJet.HomeNew@506e6d5e]" name="doubleclick" duration-ms="21655" started-at="2019-11-20T10:12:32Z" finished-at="2019-11-20T10:12:53Z">
+        </test-method> <!-- xyz -->
+      </class> <!-- spiceJet.RND -->
+      <class name="spiceJet.Home2">
+        <test-method status="PASS" signature="write()[pri:0, instance:spiceJet.Home2@6aaa5eb0]" name="write" duration-ms="4" started-at="2019-11-21T13:37:34Z" finished-at="2019-11-21T13:37:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doubleclick -->
-      </class> <!-- spiceJet.HomeNew -->
-    </test> <!-- Test2 -->
+        </test-method> <!-- write -->
+        <test-method status="PASS" signature="xyz()[pri:0, instance:spiceJet.Home2@6aaa5eb0]" name="xyz" duration-ms="0" started-at="2019-11-21T13:37:34Z" finished-at="2019-11-21T13:37:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xyz -->
+      </class> <!-- spiceJet.Home2 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

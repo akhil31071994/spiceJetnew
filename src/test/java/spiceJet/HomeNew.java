@@ -101,7 +101,7 @@ public class HomeNew extends Base {
 	@Test
 	public void doubleclick() throws IOException{
 		driver=initDriver();	
-		driver.get("https://www.google.com/");
+		driver.get("https://www.google.com/s");
 		driver.findElement(By.xpath("//div[@class='a4bIc']/div[1]/following-sibling::input")).sendKeys("dog is my favorite animal");
 		
 		Actions a=new Actions(driver);

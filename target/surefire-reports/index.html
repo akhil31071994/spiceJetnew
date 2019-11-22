@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="spiceJet.HomeNew" hash-for-method="doubleclick">doubleclick</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="spiceJet.Home2" hash-for-method="write">write</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="spiceJet.RND" hash-for-method="write">write</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="spiceJet.RND" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="spiceJet.Home2" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -119,14 +134,43 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">spiceJet.HomeNew</span>
+              <span class="class-name">spiceJet.RND</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doubleclick">
-                  </a> <!-- doubleclick -->
-                  <span class="method-name">doubleclick</span>
+                  <a name="write">
+                  </a> <!-- write -->
+                  <span class="method-name">write</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xyz">
+                  </a> <!-- xyz -->
+                  <span class="method-name">xyz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">spiceJet.Home2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="write">
+                  </a> <!-- write -->
+                  <span class="method-name">write</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xyz">
+                  </a> <!-- xyz -->
+                  <span class="method-name">xyz</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -141,15 +185,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test2&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;random&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;spiceJet.HomeNew&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;doubleclick&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- spiceJet.HomeNew --&gt;
+      &lt;class name=&quot;spiceJet.HomeNew&quot;/&gt;
+      &lt;class name=&quot;spiceJet.RND&quot;/&gt;
+      &lt;class name=&quot;spiceJet.Home2&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +208,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +218,18 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">random</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">write</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">xyz</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -187,16 +246,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'doubleclick')
-data.setCell(0, 2, 'spiceJet.HomeNew')
-data.setCell(0, 3, 21655);
+data.setCell(0, 1, 'write')
+data.setCell(0, 2, 'spiceJet.RND')
+data.setCell(0, 3, 16);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'write')
+data.setCell(1, 2, 'spiceJet.Home2')
+data.setCell(1, 3, 4);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'xyz')
+data.setCell(2, 2, 'spiceJet.RND')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'xyz')
+data.setCell(3, 2, 'spiceJet.Home2')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 20 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -211,13 +282,39 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">7 ignored methods</span>
+            <span class="header-content">15 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">spiceJet.RND</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deps</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">spiceJet.Home2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">ss</span>
+                <br/>
+                <span class="ignored-method-name">brokenLinks</span>
+                <br/>
+                <span class="ignored-method-name">score</span>
+                <br/>
+                <span class="ignored-method-name">deps</span>
+                <br/>
+                <span class="ignored-method-name">script</span>
+                <br/>
+                <span class="ignored-method-name">calen</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">spiceJet.HomeNew</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">hoveronElemet</span>
+                <br/>
+                <span class="ignored-method-name">doubleclick</span>
                 <br/>
                 <span class="ignored-method-name">invokeDriver</span>
                 <br/>
@@ -241,18 +338,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">spiceJet.HomeNew</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">testt</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">spiceJet.RND</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">doubleclick</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-name">write</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">xyz</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">spiceJet.Home2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">write</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">xyz</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
